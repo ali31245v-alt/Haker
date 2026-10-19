@@ -1,0 +1,7 @@
+# Starter blocklist: one domain per line
+doubleclick.net
+googleadservices.com
+googlesyndication.com
+adservice.google.com
+adnxs.com
+scorecardresearch.com
