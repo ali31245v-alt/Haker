@@ -235,11 +235,7 @@ class DnsFilterVpnService : VpnService() {
             this, 0, Intent(this, MainActivity::class.java),
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
-        val builder = if (Build.VERSION.SDK_INT >= 26) {
-            Notification.Builder(this, CHANNEL_ID)
-        } else {
-            @Suppress("DEPRECATION") Notification.Builder(this)
-        }
+        val builder = Notification.Builder(this, CHANNEL_ID)
         return builder
             .setContentTitle("Haker Shield")
             .setContentText("فلترة DNS مفعّلة — اضغط لفتح التطبيق")
